@@ -1,0 +1,384 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>АлтайЧай</title>
+
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="preload" href="img/banner-background.webp" as="image">
+    <link rel="manifest" href="img/icons/site.webmanifest">
+    <link rel="stylesheet" href="main.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="АлтайЧай — натуральные травяные сборы с Алтая. Уникальные рецепты для здоровья и удовольствия. Закажите прямо сейчас!">
+    <meta name="keywords" content="алтай чай, травяные сборы, травяной чай, натуральный чай, качество, вкус, детокс, релакс, таежный чай, облепиховое утро, нежный лепесток, цветы гор">
+    <meta name="author" content="АлтайЧай">
+    <meta property="og:title" content="АлтайЧай — натуральные травяные сборы">
+    <meta property="og:description" content="Попробуйте уникальные чайные сборы с Алтая для здоровья и удовольствия.">
+    <meta property="og:image" content="https://altaychay.ru/img/logo.webp">
+    <meta property="og:url" content="https://altaychay.ru">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.webp" alt="logo" class="logo">
+        <div class="space-for-menu">
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#products" class="nav-item-link">ассортимент</a></div>
+            <div class="nav-item">
+                <a href="#about" class="nav-item-link">о компании</a></div>
+            <div class="nav-item">
+                <a href="#footer" class="nav-item-link">контакты</a></div>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="mobile-nav-item">
+                <a href="#products" class="mobile-nav-item-link">ассортимент</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#about" class="mobile-nav-item-link">о компании</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#footer" class="mobile-nav-item-link">контакты</a>
+            </div>
+        </div>
+    </header>
+    <div class="tea-canvas-all">
+    <canvas id="teaLeavesCanvas"></canvas>
+        <div id='start' class="banner-container">
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="banner-left animate-text">
+                        <div class="banner-main-text">
+                            <h1 class="banner-title">Даже снег тает от этого чая</h1>
+                            <p class="banner-text">попробуй напиток, который сильнее мороза</p>
+                        </div>
+                    </div>
+                    <div class="banner-right animate-image">
+                        <img src="img/tea_group-small.webp" srcset="img/tea_group_small.webp 400w, img/tea_group.webp 916w" sizes="(max-width: 760px) 400px, 916px" alt="Чай Алтай"  class="product-image">
+                    </div>
+                </div>
+                        
+            <div class="bottom-wave"></div>
+                
+            <svg class="svg-waves">
+                <mask id="first-wave-mask" maskContentUnits="objectBoundingBox">
+                    <rect width="1" height="1" fill="white" />
+                    <path d="M0,0.66 
+                            C0.13,0.93 0.25,0.89 0.33,0.84
+                            S0.47,0.75 0.60,0.9
+                            S0.9,0.93 1,0.85
+                            L1,1 L0,1 Z" fill="black" />     
+                </mask>
+
+                <mask id="second-wave-mask" maskContentUnits="objectBoundingBox">
+                    <rect width="1" height="1" fill="white" />
+                    <path d="M0,0.74
+                        C0.13,0.76 0.22,0.76 0.31,0.89
+                        S0.4,0.95 0.5,1
+                        C0.70,0.6 0.8,1 1,1
+                        L1,0 L0,0 Z" fill="black" />
+                </mask>
+            </svg>
+            </div>
+        </div>
+        <div id='products' class="products">
+            <div class="cards-container">
+
+                <div class="card card-detoks" data-tea="detoks">
+                    <img src="img/jars/detoks.webp" loading="lazy" alt="Банка чая 'Детокс' с травяным сбором">
+                </div>
+
+                <div class="card card-taejny" data-tea="taejny">
+                    <img src="img/jars/taejny.webp" loading="lazy" alt="Банка чая 'Таежный сбор' с травяным сбором">
+                </div>
+
+                <div class="card card-tsveti" data-tea="tsveti">
+                    <img src="img/jars/tsveti.webp" loading="lazy" alt="Банка чая 'Цветы гор' с травяным сбором">
+                </div>
+
+                <div class="card card-relax" data-tea="relax">
+                    <img src="img/jars/relax.webp" loading="lazy" alt="Банка чая 'Релакс' с травяным сбором">
+                </div>
+
+                <div class="card card-lepestok" data-tea="lepestok">
+                    <img src="img/jars/lepestok.webp" loading="lazy" alt="Банка чая 'Нежный лепесток' с травяным сбором">
+                </div>
+
+                <div class="card card-ytro" data-tea="ytro">
+                    <img src="img/jars/ytro.webp" loading="lazy" alt="Банка чая 'Облепиховое утро' с травяным сбором">
+                </div>
+            </div>
+        </div>
+
+        <div id="tea-info" class="tea-info-section">
+            <div class="tea-tabs">
+                <div class="tea-tab active" data-tea="detoks">Детокс</div>
+                <div class="tea-tab" data-tea="taejny">Таежный сбор</div>
+                <div class="tea-tab" data-tea="tsveti">Цветы гор</div>
+                <div class="tea-tab" data-tea="relax">Релакс</div>
+                <div class="tea-tab" data-tea="lepestok">Нежный лепесток</div>
+                <div class="tea-tab" data-tea="ytro">Облепиховое утро</div>
+            </div>
+            
+            <div class="tea-info-content">
+                <!-- Детокс -->
+                <div id="detoks-info" class="tea-info active">
+                    <h3 class="tea-info-teaname">Детокс состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Тысячелистник</span> - 
+                            <span class="ingredient-desc"> обладает кровоостанавливающим свойством, помогает при расстройстве пищеварительной системы, кандидомикозе (молочницы), нарушениях менструального цикла.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Календула</span> - 
+                            <span class="ingredient-desc"> является хорошим спазмолитиком и желчегонным средством, улучшает работу нервной и сердечно-сосудистой системы.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Курильский чай</span> - 
+                            <span class="ingredient-desc"> помогает при дисбактериозе и пищевых отравлениях. Оказывает противовоспалительное и обезболивающее действие.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Бессмертник</span> - 
+                            <span class="ingredient-desc"> желчегонное и мочегонное действие. Усиливает лимфоток, выводит токсины.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Шиповник (плоды)</span> - 
+                            <span class="ingredient-desc"> витамин С помогает сохранить молодость, полезен для работы сердца и сосудов. Снижает уровень плохого холестерина.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Кора осины</span> - 
+                            <span class="ingredient-desc"> полезные свойства безграничны: облегчает кашель, снимает боль и воспаление, укрепляет организм, избавляет организм от гельминтов. Жаропонижающие, противомикробные свойства.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name"> Зопник</span> - 
+                            <span class="ingredient-desc"> снимает отеки, восстанавливает кислотность желудочного сока, повышает иммунитет.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Таежный сбор -->
+                <div id="taejny-info" class="tea-info">
+                    <h3>Таежный сбор состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Душица</span> - 
+                            <span class="ingredient-desc">улучшает процесс пищеварения, оказывает антисептическое и спазмолитическое действие.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Мелисса</span> - 
+                            <span class="ingredient-desc">уменьшает тревожность, борется с бессонницей, желчегонный и мочегонный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Смородина</span> - 
+                            <span class="ingredient-desc">иммуностимулирующее действие, улучшает обмен веществ, имеет противовоспалительный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Донник</span> - 
+                            <span class="ingredient-desc">полезен в качестве отхаркивающего средства при бронхите и простуде. Улучшает общее состояние.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Бадан</span> - 
+                            <span class="ingredient-desc">нормализует работу сосудов, органов пищеварения. Обладает противомикробными и тонизирующими свойствами.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Чабрец</span> - 
+                            <span class="ingredient-desc">богат антиоксидантами, обладает антибактериальными свойствами, высокое содержание железа.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Гречиха цвет</span> - 
+                            <span class="ingredient-desc">уменьшает чувство голода, при этом насыщая организм полезными микроэлементами. Очищает клетки крови от радионуклидов, токсинов, насыщая их кислородом.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Незабудки цвет (статица)</span> - 
+                            <span class="ingredient-desc">является природным энергетиком. Полезен для печени и почек, способствует очищению кишечника.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Цветы гор -->
+                <div id="tsveti-info" class="tea-info">
+                    <h3>Цветы гор состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Душица</span> - 
+                            <span class="ingredient-desc">улучшает процесс пищеварения, оказывает антисептическое и спазмолитическое действие.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Мелисса</span> - 
+                            <span class="ingredient-desc">уменьшает тревожность, борется с бессонницей, желчегонный и мочегонный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Смородина</span> - 
+                            <span class="ingredient-desc">иммуностимулирующее действие, улучшает обмен веществ, имеет противовоспалительный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Яблоня цвет</span> - 
+                            <span class="ingredient-desc">улучшает цвет лица, нормализует пищеварение. Помогает при простуде, мочекаменной болезни, сахарном диабете.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Шиповник цвет</span> - 
+                            <span class="ingredient-desc">повышает иммунитет. Вспомогательное лечение мочевыделительной системы, поджелудочной железы, борется с запорами.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Бессмертник</span> - 
+                            <span class="ingredient-desc">желчегонное и мочегонное действие. Усиливает лимфоток, выводит токсины.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Купальница цвет</span> - 
+                            <span class="ingredient-desc">улучшает пищеварение, имеет мочегонные и желчегонные свойства. Показана, тем кто следит за своим питанием и весом.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Лабазник</span> - 
+                            <span class="ingredient-desc">снимает спазмы и воспалительные процессы. Применение при ОРЗ, гриппе, герпесе.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Гомфрена цвет</span> - 
+                            <span class="ingredient-desc">богат антиоксидантами, выводит токсины, препятствует раннему старению. Восстанавливает силы организма, укрепляет память и стимулирует активность ума.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Релакс -->
+                <div id="relax-info" class="tea-info">
+                    <h3>Релакс состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Душица</span> - 
+                            <span class="ingredient-desc">улучшает процесс пищеварения, оказывает антисептическое и спазмолитическое действие.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Мелисса</span> - 
+                            <span class="ingredient-desc">уменьшает тревожность, борется с бессонницей, желчегонный и мочегонный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Ромашка</span> - 
+                            <span class="ingredient-desc">снимает спазмы и воспалительные процессы, эффективна при стрессах.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Смородина</span> - 
+                            <span class="ingredient-desc">иммуностимулирующее действие, улучшает обмен веществ, имеет противовоспалительный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Иван-чай</span> - 
+                            <span class="ingredient-desc">помогает справится со стрессами, очищает организм от шлаков и токсинов, богат витаминами С и группы В.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Нежный лепесток -->
+                <div id="lepestok-info" class="tea-info">
+                    <h3>Нежный лепесток состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Смородина</span> - 
+                            <span class="ingredient-desc">иммуностимулирующее действие, улучшает обмен веществ, имеет противовоспалительный эффект.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Малина</span> - 
+                            <span class="ingredient-desc">содержит витамины А, С, Е, РР, группы В. Жаропонижающее, антибактериальное и общеукрепляющее действие. Активизирует детоксикацию организма.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Лабазник</span> - 
+                            <span class="ingredient-desc">снимает спазмы и воспалительные процессы. Применение при ОРЗ, гриппе, герпесе.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Купальница</span> - 
+                            <span class="ingredient-desc">улучшает пищеварение, имеет мочегонные и желчегонные свойства. Показана, тем кто следит за своим питанием и весом.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Роза цвет</span> - 
+                            <span class="ingredient-desc">поднимает защитные функции организма, улучшает пищеварение, облегчает нагрузку на печень.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Облепиховое утро -->
+                <div id="ytro-info" class="tea-info">
+                    <h3>Облепиховое утро состав:</h3>
+                    <ul class="ingredient-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Облепиха (ягоды)</span> - 
+                            <span class="ingredient-desc">содержит витамины А, Н, В1, В2, С, D, Е, В3, В6, В9, тонизирует организм, улучшает настроение, выводит шлаки и токсины.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Бадан</span> - 
+                            <span class="ingredient-desc">нормализует работу сосудов, органов пищеварения. Обладает противомикробными и тонизирующими свойствами.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Иван-чай</span> - 
+                            <span class="ingredient-desc">помогает справится со стрессами, очищает организм от шлаков и токсинов, богат витаминами С и группы В.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Чабрец</span> - 
+                            <span class="ingredient-desc">богат антиоксидантами, обладает антибактериальными свойствами, высокое содержание железа.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Эспарцет</span> - 
+                            <span class="ingredient-desc">повышает сопротивляемость организма к различным инфекционным заболеваниям, способствуют снижению уровня холестерина.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Красный корень</span> - 
+                            <span class="ingredient-desc">приводит в норму биохимический состав крови, насыщает гемоглобином, стимулирует работу почек.</span>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Золотой корень</span> - 
+                            <span class="ingredient-desc">помогает справится с физическими и психоэмоциональными нагрузками.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id='about' class="about-company">
+            <div class="about-content">
+                <h2 class="about-title">АлтайЧай</h2>
+                <p class="about-text">
+                    Мы — небольшая чайная компания, которая делает акцент на натуральности и качестве.
+                    Все наши сборы создаются с заботой о вкусе и пользе для здоровья. Мы не используем химических добавок,
+                    только проверенные травы и традиционные рецепты.
+                </p>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.webp" alt="Логотип" class="footer-logo-img">
+                    <p class="footer-description">
+                        АлтайЧай
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#start">Начало</a></li>
+                        <li><a href="#products">Ассортимент</a></li>
+                        <li><a href="#about">О компании</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-markets">
+                    <h3 class="footer-title">Маркетплейс</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.wildberries.ru/brands/311405560-altay-chay" target="_blank">Wildberries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
